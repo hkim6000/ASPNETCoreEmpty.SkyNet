@@ -19,8 +19,6 @@ YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
 
 - Download GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br><br>
 
-<h4>unzip "ASPNETCoreEmpty.zip" and execute solution file(ASPNETCoreEmpty.slnx) to build your project from scratch<br></h4>
-
 <h3>Project Structure</h3><br>
 ASPNETCoreWeb/<br>
 ├── Codes/              # web page classes (C#)<br>
