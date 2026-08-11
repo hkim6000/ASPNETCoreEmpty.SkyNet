@@ -6,9 +6,18 @@
 Platform: ASP.NET Core / .NET 10<br>
 Architecture: Middleware-based <br>
 
-- Technical Documents : https://www.theskylite.com/document<br>
-- Showcase Demo. Site: https://www.theskylite.com/SkyLiteProject<br>
-- Download GitHub: https://github.com/hkim6000/SkyNetDemo-AspNetCore<br><br>
+- Showcases <br>
+1. ServiceNet - AI powered (Claude Opus 4.8) <br>
+Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
+Online User's Manual: https://www.theskylite.com/servicenet.html <br>
+YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br><br>
+
+2. BizJournal - AI powered (Claude Opus 4.8)
+Demo.Website Link: https://www.theskylite.com/BizJournal<br>
+Online User's Manual: https://www.theskylite.com/BizJournal_User_Manual.html<br>
+YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
+
+- Download GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br><br>
 
 <h4>unzip "ASPNETCoreEmpty.zip" and execute solution file(ASPNETCoreEmpty.slnx) to build your project from scratch<br></h4>
 
