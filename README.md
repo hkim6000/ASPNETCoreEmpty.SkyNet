@@ -52,7 +52,7 @@ Project Root/<br>
 //////////////////////////////////////////////////////////<br>
 <b>1.</b> Create a empty web project<br>
 <b>2.</b> Add Project Reference : <b>SKYNET.dll</b><br>
-(the SKYNET.dll file is in the bin\Debug\net10.0 foler in this demo project)<br>
+(the SKYNET.dll file is in the data folder in this project)<br>
 //////////////////////////////////////////////////////////<br>
 Prerequisite : install thru menu-view-terminal in Visual Studio<br>
 <b>3.</b> Excute command in the terminal:<br>
