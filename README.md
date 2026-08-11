@@ -20,13 +20,14 @@ YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
 - Download GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br><br>
 
 <h3>Project Structure</h3><br>
-ASPNETCoreWeb/<br>
+Project Root/<br>
 ├── Codes/              # web page classes (C#)<br>
-│   ├── XysUser         # no routing rule, free webpage class location<br>
-│   ├── XysUserMV       # web page class can be anywhere in the project folder<br>
-│   ├── XysUserEV       <br>
-│   ├── XysRole         <br>
-│   ├── XysPermission   <br>
+│   ├── Login.cs       # example filename<br>
+│   ├── Reset.cs       # example<br>
+│   ├── MesFolder / # example folder      <br>
+│       └── Products.cs  <br>
+│       └── Parts.cs  <br>
+│       └── BOM.cs  <br>
 │   └── ...<br>
 ├── bin\Debug\net10.0<br>
 │      └── <b>SkyNet.dll ++ # ⭐ SKYNET framework file(single dependency)</b><br>
