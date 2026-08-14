@@ -1,4 +1,4 @@
-<h2>SkyNet Framework Visual Studio Empty Template</h2>
+<h2>SkyNet Framework - Visual Studio Project Template</h2>
 
 <h3>Modern ASP.NET Core Implementation | .NET 10</h3>
 
