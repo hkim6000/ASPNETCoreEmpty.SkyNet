@@ -1,0 +1,101 @@
+ 
+.cfg-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F7F5EF;
+}
+
+/* ── Sub Tabbar ──────────────────────────────────────────── */
+.cfg-tabbar {
+    background: #F7F5EF;
+    border-bottom: 1px solid #E4E0D3;
+    padding: 0 20px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.cfg-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 2px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.cfg-tabs::-webkit-scrollbar { display: none; }
+
+.cfg-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 12px 16px 10px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #8C897F;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color .12s, border-color .12s;
+    user-select: none;
+}
+
+.cfg-tab:hover { color: #191815; }
+
+.cfg-tab.cfg-active {
+    color: #191815;
+    border-bottom-color: #D97757;
+}
+
+.cfg-t-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #D97757;
+    display: none;
+    flex-shrink: 0;
+}
+
+.cfg-tab.cfg-dirty .cfg-t-dot { display: block; }
+
+/* ── Panel ───────────────────────────────────────────────── */
+.cfg-content {
+    flex: 1;
+    overflow: hidden;
+    padding: 0;
+    min-height: 0;
+}
+
+.cfg-panel              { display: none; height: 100%; }
+.cfg-panel.cfg-active   { display: block; height: 100%; }
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.cfg-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #E4E0D3;
+    background: #FFFFFF;
+    color: #191815;
+    cursor: pointer;
+    transition: background .12s, border-color .12s;
+    font-family: inherit;
+}
+
+.cfg-btn:hover { background: #F1EFE8; }
+
+.cfg-btn.cfg-btn-primary {
+    background: #191815;
+    color: #FAF9F2;
+    border-color: #191815;
+}
+
+.cfg-btn.cfg-btn-primary:hover { background: #2B2A26; }
+

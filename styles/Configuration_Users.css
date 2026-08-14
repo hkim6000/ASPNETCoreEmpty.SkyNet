@@ -1,0 +1,767 @@
+/* ============================================================
+   Configuration_Users — scoped cfgu- prefix
+   ServiceNet warm palette
+============================================================ */
+
+.cfgu-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 14px;
+    background: #F7F5EF;
+}
+
+/* ── Head ────────────────────────────────────────────────── */
+.cfgu-head {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 8px 20px 8px 16px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E4E0D3;
+    gap: 8px;
+}
+
+/* ── Layout ──────────────────────────────────────────────── */
+.cfgu-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    min-height: 0;
+}
+
+/* ── Sidebar ─────────────────────────────────────────────── */
+.cfgu-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    border-right: 1px solid #E4E0D3;
+    background: #F7F5EF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.cfgu-sidebar-header {
+    padding: 10px 14px;
+    border-bottom: 1px solid #E4E0D3;
+    background: #FFFFFF;
+    flex-shrink: 0;
+}
+
+.cfgu-sidebar-title {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    color: #8C897F;
+}
+
+.cfgu-user-search {
+    margin: 8px;
+    padding: 7px 10px;
+    border: 1px solid #E4E0D3;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: inherit;
+    background: #FFFFFF;
+    color: #191815;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+    flex-shrink: 0;
+    transition: border-color .15s;
+}
+
+    .cfgu-user-search:focus {
+        outline: none;
+        border-color: #D97757;
+        box-shadow: 0 0 0 3px rgba(217,119,87,.12);
+    }
+
+.cfgu-user-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 4px 8px 8px;
+}
+
+.cfgu-empty-list {
+    padding: 12px;
+    font-size: 11px;
+    color: #8C897F;
+    text-align: center;
+}
+
+.cfgu-user-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #56544E;
+    font-weight: 500;
+    transition: all .15s;
+    margin-bottom: 2px;
+    border: 1.5px solid transparent;
+}
+
+    .cfgu-user-item:hover {
+        background: #F1EFE8;
+        color: #191815;
+    }
+
+    .cfgu-user-item.cfgu-active {
+        background: #FDF4EF;
+        color: #D97757;
+        border-color: #F5C9B5;
+        font-weight: 600;
+    }
+
+.cfgu-user-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    background: #D97757;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.cfgu-user-item.cfgu-active .cfgu-user-avatar {
+    background: #C4623E;
+}
+
+.cfgu-user-info {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.cfgu-user-name-sm {
+    font-size: 12px;
+    font-weight: 600;
+    color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cfgu-user-email-sm {
+    font-size: 10px;
+    color: #8C897F;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cfgu-user-item.cfgu-active .cfgu-user-email-sm {
+    color: #E8B49A;
+}
+
+/* ── Editor ──────────────────────────────────────────────── */
+.cfgu-editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-width: 0;
+}
+
+.cfgu-editor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    border-bottom: 1px solid #E4E0D3;
+    background: #FFFFFF;
+    flex-shrink: 0;
+    gap: 12px;
+}
+
+.cfgu-editor-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #191815;
+}
+
+.cfgu-editor-desc {
+    font-size: 11px;
+    color: #8C897F;
+    margin-top: 2px;
+}
+
+.cfgu-editor-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.cfgu-changes-badge {
+    font-size: 11px;
+    font-weight: 600;
+    color: #D97706;
+    background: #FEF3C7;
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+
+.cfgu-editor-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 20px;
+}
+
+/* ── Sections ────────────────────────────────────────────── */
+.cfgu-section {
+    background: #FFFFFF;
+    border: 1px solid #E4E0D3;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.cfgu-section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #F7F5EF;
+    border-bottom: 1px solid #E4E0D3;
+}
+
+.cfgu-section-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #56544E;
+    flex: 1;
+}
+
+.cfgu-section-link {
+    font-size: 11px;
+    font-weight: 600;
+    color: #D97757;
+    cursor: pointer;
+}
+
+    .cfgu-section-link:hover {
+        color: #C4623E;
+        text-decoration: underline;
+    }
+
+.cfgu-section-body {
+    padding: 14px 16px;
+}
+
+/* ── Avatar row ──────────────────────────────────────────── */
+.cfgu-avatar-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: #F7F5EF;
+    border-bottom: 1px solid #E4E0D3;
+}
+
+.cfgu-avatar-lg {
+    width: 52px;
+    height: 52px;
+    border-radius: 999px;
+    background: #D97757;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.cfgu-avatar-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cfgu-upload-hint {
+    font-size: 10px;
+    color: #8C897F;
+}
+
+/* ── Form ────────────────────────────────────────────────── */
+.cfgu-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.cfgu-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cfgu-form-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: #8C897F;
+}
+
+.cfgu-req {
+    color: #DC2626;
+    margin-left: 2px;
+}
+
+.cfgu-form-input {
+    padding: 8px 10px;
+    border: 1px solid #E4E0D3;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: inherit;
+    color: #191815;
+    background: #FFFFFF;
+    transition: border-color .15s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .cfgu-form-input:focus {
+        outline: none;
+        border-color: #D97757;
+        box-shadow: 0 0 0 3px rgba(217,119,87,.12);
+    }
+
+.cfgu-form-select {
+    padding: 8px 28px 8px 10px;
+    border: 1px solid #E4E0D3;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: inherit;
+    color: #191815;
+    background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238C897F' d='M6 8L1 3h10z'/%3E%3C/svg%3E") no-repeat right 10px center;
+    transition: border-color .15s;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    appearance: none;
+}
+
+    .cfgu-form-select:focus {
+        outline: none;
+        border-color: #D97757;
+        box-shadow: 0 0 0 3px rgba(217,119,87,.12);
+    }
+
+/* ── Toggle ──────────────────────────────────────────────── */
+.cfgu-toggle-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0;
+}
+
+.cfgu-toggle-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #56544E;
+}
+
+.cfgu-toggle-wrap {
+    position: relative;
+    width: 36px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.cfgu-toggle-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.cfgu-toggle-track {
+    position: absolute;
+    inset: 0;
+    background: #D8D0BF;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background .2s;
+}
+
+.cfgu-toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 999px;
+    transition: transform .2s;
+    pointer-events: none;
+}
+
+.cfgu-toggle-input:checked ~ .cfgu-toggle-track {
+    background: #16A34A;
+}
+
+.cfgu-toggle-input:checked ~ .cfgu-toggle-thumb {
+    transform: translateX(16px);
+}
+
+/* ── Status badge ────────────────────────────────────────── */
+.cfgu-status-active {
+    display: inline-flex;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #DCFCE7;
+    color: #16A34A;
+}
+
+.cfgu-status-inactive {
+    display: inline-flex;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #F1EFE8;
+    color: #8C897F;
+}
+
+/* ── Check items (roles) ─────────────────────────────────── */
+.cfgu-check-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.cfgu-check-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 10px;
+    border-radius: 6px;
+    border: 1px solid #E4E0D3;
+    cursor: pointer;
+    font-size: 12px;
+    color: #56544E;
+    font-weight: 500;
+    transition: all .15s;
+    background: #FFFFFF;
+}
+
+    .cfgu-check-item:hover {
+        background: #FDF4EF;
+        border-color: #F5C9B5;
+    }
+
+    .cfgu-check-item.cfgu-checked {
+        background: #FDF4EF;
+        border-color: #F5C9B5;
+        color: #D97757;
+    }
+
+.cfgu-check-box {
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #D8D0BF;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #FFFFFF;
+    transition: all .15s;
+}
+
+.cfgu-check-item.cfgu-checked .cfgu-check-box {
+    background: #D97757;
+    border-color: #D97757;
+}
+
+    .cfgu-check-item.cfgu-checked .cfgu-check-box::after {
+        content: '';
+        width: 8px;
+        height: 5px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: rotate(-45deg) translateY(-1px);
+        display: block;
+    }
+
+/* ── Buttons ─────────────────────────────────────────────── */
+.cfgu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .15s;
+    border: none;
+    white-space: nowrap;
+    line-height: 1;
+    min-width: 80px;
+}
+
+.cfgu-btn-primary {
+    background: #191815;
+    color: #FAF9F2;
+}
+
+    .cfgu-btn-primary:hover {
+        background: #2B2A26;
+    }
+
+    .cfgu-btn-primary:disabled {
+        background: #D8D0BF;
+        color: #8C897F;
+        cursor: not-allowed;
+    }
+
+.cfgu-btn-add {
+    background: #756D58;
+    color: #fff;
+}
+
+    .cfgu-btn-add:hover {
+        background: #16A34A;
+    }
+
+.cfgu-btn-delete {
+    background: #DC2626;
+    color: #fff;
+}
+
+    .cfgu-btn-delete:hover {
+        background: #B91C1C;
+    }
+
+.cfgu-btn-save {
+    background: #16A34A;
+    color: #fff;
+}
+
+    .cfgu-btn-save:hover {
+        background: #15803D;
+    }
+
+    .cfgu-btn-save:disabled {
+        background: #D8D0BF;
+        color: #8C897F;
+        cursor: not-allowed;
+    }
+
+.cfgu-btn-cancel {
+    background: #E9E6DC;
+    color: #56544E;
+}
+
+    .cfgu-btn-cancel:hover {
+        background: #D8D0BF;
+    }
+
+.cfgu-btn-ghost {
+    background: #FFFFFF;
+    color: #56544E;
+    border: 1px solid #E4E0D3;
+}
+
+    .cfgu-btn-ghost:hover {
+        background: #F7F5EF;
+    }
+
+.cfgu-btn-upload {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #FFFFFF;
+    color: #56544E;
+    border: 1px solid #E4E0D3;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .15s;
+}
+
+    .cfgu-btn-upload:hover {
+        background: #F7F5EF;
+        border-color: #D8D0BF;
+    }
+
+/* ── Dialog ──────────────────────────────────────────────── */
+.cfgu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(25,24,21,.45);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cfgu-overlay.open {
+        display: flex;
+    }
+
+.cfgu-dialog {
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(25,24,21,.18);
+    width: 600px;
+    max-width: 95vw;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.cfgu-dialog-sm {
+    width: 520px;
+}
+
+.cfgu-dialog-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #E4E0D3;
+    flex-shrink: 0;
+}
+
+.cfgu-dialog-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: #FEF3C7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.cfgu-dialog-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #191815;
+}
+
+.cfgu-dialog-subtitle {
+    font-size: 11px;
+    color: #8C897F;
+    margin-top: 2px;
+}
+
+.cfgu-dialog-close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #8C897F;
+    cursor: pointer;
+    padding: 2px 6px;
+    line-height: 1;
+}
+
+    .cfgu-dialog-close:hover {
+        color: #191815;
+    }
+
+.cfgu-dialog-body {
+    overflow-y: auto;
+    flex: 1;
+}
+
+.cfgu-nu-body {
+    padding: 20px;
+}
+
+.cfgu-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 14px 20px;
+    border-top: 1px solid #E4E0D3;
+    background: #F7F5EF;
+    flex-shrink: 0;
+}
+
+/* Diff table */
+.cfgu-diff-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+    .cfgu-diff-table thead tr {
+        background: #EDE8DC;
+    }
+
+    .cfgu-diff-table th {
+        padding: 8px 14px;
+        text-align: left;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        color: #56544E;
+        border-bottom: 1px solid #E4E0D3;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #EDE8DC;
+    }
+
+    .cfgu-diff-table td {
+        padding: 8px 14px;
+        border-bottom: 1px solid #F1EFE8;
+        color: #56544E;
+    }
+
+    .cfgu-diff-table tr:last-child td {
+        border-bottom: none;
+    }
+
+.cfgu-diff-was {
+    color: #8C897F;
+    text-decoration: line-through;
+    font-size: 11px;
+}
+
+.cfgu-diff-now {
+    font-weight: 700;
+}
+
+    .cfgu-diff-now.added {
+        color: #16A34A;
+    }
+
+    .cfgu-diff-now.removed {
+        color: #DC2626;
+    }
+
+    .cfgu-diff-now.changed {
+        color: #D97706;
+    }

@@ -1,0 +1,209 @@
+<div id="cfgu-initdata" style="display:none;">{plhd_initdata}</div>
+<div class="cfgu-wrap" style="visibility:hidden;">
+
+    <!-- Head -->
+    <div class="cfgu-head">
+        <div class="cfgu-head-actions">
+            {plhd_addusr}
+        </div>
+    </div>
+
+    <!-- Layout -->
+    <div class="cfgu-layout">
+
+        <!-- Sidebar -->
+        <div class="cfgu-sidebar">
+            <div class="cfgu-sidebar-header">
+                <div class="cfgu-sidebar-title">Users</div>
+            </div>
+            <input class="cfgu-user-search" type="text" placeholder="Search users…" id="cfgu-user-search" oninput="Configuration_UsersJs.searchUsers(this.value)" />
+            <div class="cfgu-user-list" id="cfgu-user-list">
+                <div class="cfgu-empty-list">Type to search users.</div>
+            </div>
+        </div>
+
+        <!-- Editor -->
+        <div class="cfgu-editor">
+            <div class="cfgu-editor-header">
+                <div>
+                    <div class="cfgu-editor-name" id="cfgu-editor-name">No User Selected</div>
+                    <div class="cfgu-editor-desc" id="cfgu-editor-desc">Search a user from the left panel to begin editing.</div>
+                </div>
+                <div class="cfgu-editor-actions">
+                    <span class="cfgu-changes-badge" id="cfgu-changes-badge" style="display:none;">● <span id="cfgu-changes-count">0</span> unsaved</span>
+                    <span id="cfgu-del-btn-wrap"></span>
+                    <span id="cfgu-reset-btn-wrap"></span>
+                    {plhd_savebtn}
+                </div>
+            </div>
+            <div class="cfgu-editor-body" id="cfgu-editor-body"></div>
+        </div>
+
+    </div>
+
+    <!-- Review Dialog -->
+    <div class="cfgu-overlay" id="cfgu-overlay">
+        <div class="cfgu-dialog">
+            <div class="cfgu-dialog-header">
+                <div class="cfgu-dialog-icon">💾</div>
+                <div>
+                    <div class="cfgu-dialog-title" id="cfgu-dlg-title">Review Changes</div>
+                    <div class="cfgu-dialog-subtitle" id="cfgu-dlg-subtitle"></div>
+                </div>
+            </div>
+            <div class="cfgu-dialog-body" id="cfgu-dlg-body"></div>
+            <div class="cfgu-dialog-footer" id="cfgu-dlg-foot"></div>
+        </div>
+    </div>
+
+    <!-- Add User Dialog -->
+    <div class="cfgu-overlay" id="cfgu-nu-overlay">
+        <div class="cfgu-dialog cfgu-dialog-sm">
+            <div class="cfgu-dialog-header">
+                <div class="cfgu-dialog-icon">👤</div>
+                <div>
+                    <div class="cfgu-dialog-title">New User</div>
+                    <div class="cfgu-dialog-subtitle">Fill in the details to register a new user.</div>
+                </div>
+                <button class="cfgu-dialog-close" onclick="Configuration_UsersJs.closeAddUserDialog()">&#x2715;</button>
+            </div>
+            <div class="cfgu-dialog-body cfgu-nu-body">
+                <div class="cfgu-form-grid">
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">First Name <span class="cfgu-req">*</span></label>
+                        <input class="cfgu-form-input" id="cfgu-nu-firstname" type="text" placeholder="First name" />
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Last Name <span class="cfgu-req">*</span></label>
+                        <input class="cfgu-form-input" id="cfgu-nu-lastname" type="text" placeholder="Last name" />
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Email <span class="cfgu-req">*</span></label>
+                        <input class="cfgu-form-input" id="cfgu-nu-email" type="text" placeholder="Email address" />
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Phone</label>
+                        <input class="cfgu-form-input" id="cfgu-nu-phone" type="text" placeholder="Phone number" />
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Username <span class="cfgu-req">*</span></label>
+                        <input class="cfgu-form-input" id="cfgu-nu-username" type="text" placeholder="Username" />
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">MFA</label>
+                        <div class="cfgu-toggle-row">
+                            <label class="cfgu-toggle-wrap">
+                                <input class="cfgu-toggle-input" type="checkbox" id="cfgu-nu-mfa" />
+                                <span class="cfgu-toggle-track"></span>
+                                <span class="cfgu-toggle-thumb"></span>
+                            </label>
+                            <span class="cfgu-toggle-label">MFA</span>
+                        </div>
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">SMS</label>
+                        <div class="cfgu-toggle-row">
+                            <label class="cfgu-toggle-wrap">
+                                <input class="cfgu-toggle-input" type="checkbox" id="cfgu-nu-sms" />
+                                <span class="cfgu-toggle-track"></span>
+                                <span class="cfgu-toggle-thumb"></span>
+                            </label>
+                            <span class="cfgu-toggle-label">SMS</span>
+                        </div>
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Primary Role</label>
+                        <select class="cfgu-form-select" id="cfgu-nu-role">
+                            <option value="">-- Select Role --</option>
+                        </select>
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Primary Site</label>
+                        <select class="cfgu-form-select" id="cfgu-nu-site">
+                            <option value="">-- Select Site --</option>
+                        </select>
+                    </div>
+                    <div class="cfgu-form-group">
+                        <label class="cfgu-form-label">Status</label>
+                        <select class="cfgu-form-select" id="cfgu-nu-status">
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="cfgu-dialog-footer">
+                <button class="cfgu-btn cfgu-btn-cancel" onclick="Configuration_UsersJs.closeAddUserDialog()">Cancel</button>
+                <button class="cfgu-btn cfgu-btn-save" onclick="Configuration_UsersJs.submitAddUser()">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete User Confirm -->
+    <div class="cfgu-overlay" id="cfgu-del-overlay">
+        <div class="cfgu-dialog cfgu-dialog-sm">
+            <div class="cfgu-dialog-header">
+                <div class="cfgu-dialog-icon" style="background:#FEE2E2;">🗑️</div>
+                <div>
+                    <div class="cfgu-dialog-title">Delete User</div>
+                    <div class="cfgu-dialog-subtitle" id="cfgu-del-subtitle"></div>
+                </div>
+            </div>
+            <div class="cfgu-dialog-body cfgu-nu-body">
+                <p style="font-size:12px;color:#56544E;margin:0;">
+                    Are you sure you want to delete this user? All role and site assignments will also be removed. This cannot be undone.
+                </p>
+            </div>
+            <div class="cfgu-dialog-footer">
+                <button class="cfgu-btn cfgu-btn-cancel" onclick="Configuration_UsersJs.closeDeleteDialog()">Cancel</button>
+                <button class="cfgu-btn cfgu-btn-delete" onclick="Configuration_UsersJs.confirmDeleteUser()">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reset Password Confirm -->
+    <div class="cfgu-overlay" id="cfgu-reset-overlay">
+        <div class="cfgu-dialog cfgu-dialog-sm">
+            <div class="cfgu-dialog-header">
+                <div class="cfgu-dialog-icon" style="background:#FEF3C7;">🔑</div>
+                <div>
+                    <div class="cfgu-dialog-title">Reset Password</div>
+                    <div class="cfgu-dialog-subtitle" id="cfgu-reset-subtitle"></div>
+                </div>
+            </div>
+            <div class="cfgu-dialog-body cfgu-nu-body">
+                <p style="font-size:12px;color:#56544E;margin:0;">
+                    This will generate an OTP and send it to the user's email. The user will be required to set a new password on next login.
+                </p>
+            </div>
+            <div class="cfgu-dialog-footer">
+                <button class="cfgu-btn cfgu-btn-cancel" onclick="Configuration_UsersJs.closeResetDialog()">Cancel</button>
+                <button class="cfgu-btn cfgu-btn-save" onclick="Configuration_UsersJs.confirmResetPassword()">Send OTP &amp; Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Password Reset Success/Warning Dialog -->
+    <div class="cfgu-overlay" id="cfgu-pwdreset-overlay">
+        <div class="cfgu-dialog cfgu-dialog-sm">
+            <div class="cfgu-dialog-header">
+                <div class="cfgu-dialog-icon" id="cfgu-pwdreset-icon">✅</div>
+                <div>
+                    <div class="cfgu-dialog-title" id="cfgu-pwdreset-title">Email Sent</div>
+                    <div class="cfgu-dialog-subtitle" id="cfgu-pwdreset-subtitle"></div>
+                </div>
+            </div>
+            <div class="cfgu-dialog-body cfgu-nu-body">
+                <p id="cfgu-pwdreset-msg" style="font-size:12px;color:#56544E;margin:0;line-height:1.6;"></p>
+            </div>
+            <div class="cfgu-dialog-footer">
+                <button class="cfgu-btn cfgu-btn-save" onclick="Configuration_UsersJs.closePwdResetDialog()">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden file input -->
+    <input type="file" id="cfgu-photo-input" accept="image/jpeg,image/png" style="display:none;" />
+
+</div>
+
