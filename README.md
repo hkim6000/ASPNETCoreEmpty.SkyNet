@@ -24,10 +24,11 @@ Project Root/<br>
 ├── Codes/              # web page classes (C#)<br>
 │   ├── Login.cs       # example filename<br>
 │   ├── Reset.cs       # example<br>
-│   ├── MesFolder / # example folder      <br>
-│       └── Products.cs  <br>
-│       └── Parts.cs  <br>
-│       └── BOM.cs  <br>
+│   ├── Configuration / # example code folder      <br>
+│       └── Configuration.cs  <br>
+│       └── Configuration_Users.cs  <br>
+│       └── Models <br>
+│           └── ConfigurationModel.cs <br>
 │   └── ...<br>
 ├── bin\Debug\net10.0<br>
 │      └── <b>SkyNet.dll ++ # ⭐ SKYNET framework file(single dependency)</b><br>
