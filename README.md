@@ -137,7 +137,7 @@ Rapid Development<br>
 
 <h3>Conclusion</h3><br>
 The SkyNetDemo project is a masterclass in building a secure, scalable, and maintainable web application with the SkyNet framework on modern ASP.NET Core. Its architecture is perfectly suited for complex business applications like ERPs, CRMs, or internal admin portals where data integrity, role-based security, and rapid development of standardized forms are paramount.<br>
-SkyNet brings the proven patterns of SKYLITE to the modern .NET ecosystem, providing a clear migration path for legacy applications while enabling new projects to benefit from cross-platform, cloud-ready ASP.NET Core.<br>
+SkyNet brings the proven patterns of SKYLITE to the modern .NET ecosystem, providing a clear migration path for legacy applications while enabling new projects to benefit from cross-platform, cloud-ready ASP.NET Core.<br><br><br>
 
 © 2026 The SkyLite, HC Kim. All rights reserved.
 SkyNet Framework is proprietary software, free to use under the terms in [LICENSE.txt](LICENSE.txt).
