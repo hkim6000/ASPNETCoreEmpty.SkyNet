@@ -3,6 +3,9 @@ SkyLite & SkyNet Framework License
 Copyright (c) 2026 The SkyLite, HC Kim. All rights reserved.
 https://www.theskylite.com
 
+"The SkyLite" is the trade name of HC Kim, who owns the SkyNet Framework
+and grants this license.
+
 
 This repository contains two kinds of material, licensed differently:
 
