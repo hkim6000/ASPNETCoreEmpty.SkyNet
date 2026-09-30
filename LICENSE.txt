@@ -1,4 +1,4 @@
-SkyNet Framework License
+SkyLite & SkyNet Framework License
 
 Copyright (c) 2026 The SkyLite, HC Kim. All rights reserved.
 https://www.theskylite.com
