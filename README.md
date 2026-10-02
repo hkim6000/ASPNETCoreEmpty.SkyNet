@@ -143,4 +143,4 @@ SkyNet brings the proven patterns of SKYLITE to the modern .NET ecosystem, provi
 
 © 2026 The SkyLite, HC Kim. All rights reserved.
 SkyNet Framework is proprietary software, free to use under the terms in [LICENSE.txt](LICENSE.txt).
-Template and sample code in this repository are MIT-licensed.
+
