@@ -98,7 +98,7 @@ YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
 <br>
 
 <h3>Framework Philosophy</h3>
-<b>Full AI Supports, Server-Centric, No FrontEnd Javascript Framework</b><br>
+<b>With full AI Supporting, Server-Centric, No FrontEnd Javascript Framework</b><br>
 <b>SkyNet embraces a server-centric architecture where:</b><br>
 •	Minimizing Errors in AI-Assisted Coding<br>
 •	Business logic stays on the server (secure, maintainable)<br>
