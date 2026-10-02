@@ -51,9 +51,8 @@ or<br>
 dotnet add package TheSkyLite.SkyNet<br>
 <br>
 //////////////////////////////////////////////////////////<br>
-Prerequisite : install thru menu-view-terminal in Visual Studio<br>
-<b>3.</b>If it needed, Install these packages<br>
-      dotnet add package Microsoft.Data.SqlClient<br><br>
+<b>3.</b>If it needed, Install other packages<br>
+      dotnet add package Microsoft.Data.SqlClient: for MS-Sql server<br>
       dotnet add package System.Drawing.Common<br>
 <br>
 <b>5.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
