@@ -122,7 +122,6 @@ Rapid Development<br>
 •	Middleware: Custom SkyNet IHandler<br>
 •	Frontend: HTML5, CSS3, Minimal JavaScript<br>
 •	Authentication: Customizable, Cookie-based with encrypted AppKey in Showcase version<br>
-•	Deployment: IIS, Kestrel, Docker-ready<br>
   
 <h3>Use Cases</h3>
 <b>SkyNet is perfectly suited for:</b><br>
