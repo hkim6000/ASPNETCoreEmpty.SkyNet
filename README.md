@@ -53,9 +53,16 @@ Project Root/<br>
 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
 //////////////////////////////////////////////////////////<br>
-<b>1.</b> Create a empty web project<br>
-<b>2.</b> Add Project Reference : <b>SKYNET.dll</b><br>
-(the SKYNET.dll file is in the data folder in this project. remove skynet.dll file from data folder after adding it as reference)<br>
+<b>1.</b> In Visual Studio, create a empty Asp.Net.core project<br>
+<b>2.</b> Install SkyNet Reference <br>
+In NuGet Package Console <br>
+```<br>
+Install-Package TheSkyLite.SkyNet<br>
+```<br>
+or<br>
+```<br>
+dotnet add package TheSkyLite.SkyNet<br>
+```<br>
 //////////////////////////////////////////////////////////<br>
 Prerequisite : install thru menu-view-terminal in Visual Studio<br>
 <b>3.</b> Excute command in the terminal:<br>
