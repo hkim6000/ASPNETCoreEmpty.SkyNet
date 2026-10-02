@@ -98,7 +98,7 @@ YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
 <br>
 
 <h3>Framework Philosophy</h3>
-<b>Server-Centric, No FrontEnd Javascript Framework</b>br>
+<b>Server-Centric, No FrontEnd Javascript Framework</b><br>
 <b>SkyNet embraces a server-centric architecture where:</b><br>
 •	Business logic stays on the server (secure, maintainable)<br>
 •	Client makes lightweight AJAX calls via $ApiRequest<br>
