@@ -55,21 +55,12 @@ dotnet add package TheSkyLite.SkyNet<br>
       dotnet add package Microsoft.Data.SqlClient: for MS-Sql server<br>
       dotnet add package System.Drawing.Common<br>
 <br>
-<b>5.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
+<b>4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
-<b>6.</b> Add some folders in "Edit Project File" menu<br>
-├── appConfig/<br>
-├── data/                  # Data storage folder<br>
-├── htmls/                 # HTML email templates<br>
-├── images/                # Static images<br>
-├── logs/                  # Application logs<br>
-├── scripts/               # JavaScript files<br>
-├── styles/                # CSS stylesheets<br>
-├── temp/                  # Temporary files<br>
- 
+
 //////////////////////////////////////////////////////////<br><br>
 
-<b> ⭐ 7. program.cs for Asp.Net Core</b><br>
+<b> ⭐ 5. program.cs for Asp.Net Core</b><br>
 <br>
 ------------------------------------------------------------------------------<br>
 using SkyNet;<br>
@@ -97,8 +88,8 @@ var builder = WebApplication.CreateBuilder(args);<br>
 1. ServiceNet - AI powered (Claude Opus 4.8) <br>
 Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
 Online User's Manual: https://www.theskylite.com/servicenet.html <br>
-YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br><br>
-
+YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br>
+<br>
 2. BizJournal - AI powered (Claude Opus 4.8)
 Demo.Website Link: https://www.theskylite.com/BizJournal<br>
 Online User's Manual: https://www.theskylite.com/BizJournal_User_Manual.html<br>
@@ -107,7 +98,7 @@ YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
 <br>
 
 <h3>Framework Philosophy</h3>
-<b>Server-Centric, AJAX-Driven</b>br>
+<b>Server-Centric, No FrontEnd Javascript Framework</b>br>
 <b>SkyNet embraces a server-centric architecture where:</b><br>
 •	Business logic stays on the server (secure, maintainable)<br>
 •	Client makes lightweight AJAX calls via $ApiRequest<br>
