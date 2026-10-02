@@ -10,17 +10,6 @@ GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br>
 YouTube: https://www.youtube.com/@hckim3948<br>
 Developer Guide: https://www.theskylite.com/documents/SkyNet_Developer_Guide.html<br><br>
 
-- Showcases <br>
-1. ServiceNet - AI powered (Claude Opus 4.8) <br>
-Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
-Online User's Manual: https://www.theskylite.com/servicenet.html <br>
-YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br><br>
-
-2. BizJournal - AI powered (Claude Opus 4.8)
-Demo.Website Link: https://www.theskylite.com/BizJournal<br>
-Online User's Manual: https://www.theskylite.com/BizJournal_User_Manual.html<br>
-YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
-
 <h3>Project Structure</h3><br>
 Project Root/<br>
 ├── Codes/              # web page classes (C#)<br>
@@ -58,17 +47,15 @@ Project Root/<br>
 In NuGet Package Console <br>
 ```<br>
 Install-Package TheSkyLite.SkyNet<br>
-```<br>
 or<br>
-```<br>
 dotnet add package TheSkyLite.SkyNet<br>
-```<br>
+<br>
 //////////////////////////////////////////////////////////<br>
 Prerequisite : install thru menu-view-terminal in Visual Studio<br>
-<b>3.</b> Excute command in the terminal:<br>
-      &nbsp;&nbsp;&nbsp;(<b>dotnet add package Microsoft.Data.SqlClient</b>)<br><br>
-<b>4.</b> Excute command in the terminal:<br>
-      &nbsp;&nbsp;&nbsp;(<b>dotnet add package System.Drawing.Common</b>)<br><br>
+<b>3.</b>If it needed, Install these packages<br>
+      dotnet add package Microsoft.Data.SqlClient<br><br>
+      dotnet add package System.Drawing.Common<br>
+<br>
 <b>5.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 <b>6.</b> Add some folders in "Edit Project File" menu<br>
@@ -105,6 +92,19 @@ var builder = WebApplication.CreateBuilder(args);<br>
 <br>
 <b>app.Run();</b>b><br>
 ------------------------------------------------------------------------------<br>
+<br>
+
+<h3>AI Vibe-Coding Showcases </h3>
+1. ServiceNet - AI powered (Claude Opus 4.8) <br>
+Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
+Online User's Manual: https://www.theskylite.com/servicenet.html <br>
+YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br><br>
+
+2. BizJournal - AI powered (Claude Opus 4.8)
+Demo.Website Link: https://www.theskylite.com/BizJournal<br>
+Online User's Manual: https://www.theskylite.com/BizJournal_User_Manual.html<br>
+YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
+<br>
 <br>
 
 <h3>Framework Philosophy</h3>
