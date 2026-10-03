@@ -90,7 +90,7 @@ Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
 Online User's Manual: https://www.theskylite.com/servicenet.html <br>
 YouTube: https://www.youtube.com/watch?v=0hEywq6Om2o<br>
 <br>
-2. BizJournal - AI powered (Claude Opus 4.8)
+2. BizJournal - AI powered (Claude Opus 4.8)<br>
 Demo.Website Link: https://www.theskylite.com/BizJournal<br>
 Online User's Manual: https://www.theskylite.com/BizJournal_User_Manual.html<br>
 YouTube: https://www.youtube.com/watch?v=IVFX0slGTAs<br>
