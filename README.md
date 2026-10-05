@@ -150,8 +150,8 @@ using SkyNet;<br>
 </pre>
 ------------------------------------------------------------------------------<br>
 
-<h3>AI Vibe-Coding Prerequisite for SkyNet</h3>
- Before AI writes codes, Let AI read these articles<br>
+<h3>AI(Claude) Vibe-Coding Prerequisite for SkyNet</h3>
+ Before AI writes codes, Let AI read these articles(Programming guide and Skill)<br>
 - <b>https://www.theskylite.com/documents/SkyNet_Developer_Guide.html</b><br>
 - <b>SKILL.SkyNet.md</b> in file list above<br>
 <br>
