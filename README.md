@@ -11,6 +11,8 @@ YouTube: https://www.youtube.com/@hckim3948<br>
 Developer Guide: https://www.theskylite.com/documents/SkyNet_Developer_Guide.html<br><br>
 
 <h3>Project Structure</h3><br>
+<pre>
+<code>
 Project Root/<br>
 ├── Codes/              # web page classes (C#)<br>
 │   ├── Login.cs       # example filename<br>
@@ -37,18 +39,19 @@ Project Root/<br>
 │   └── WebStyle.css<br>
 ├── temp/                  # Temporary files<br>
 ├── Program.cs             # ASP.NET Core startup<br><br>
-
- ----------------------------------------------------------------------------------------<br>
-
+</code>
+</pre>
+ 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
 <b> ⭐ 1.</b> In Visual Studio, create a empty Asp.Net.core project<br>
-<b> ⭐ 2.</b> Install SkyNet Reference <br>
-In NuGet Package Console <br>
-```<br>
+<b> ⭐ 2.</b> Install SkyNet Reference (In NuGet Package Console) <br>
+<pre>
+<code>
 Install-Package TheSkyLite.SkyNet<br>
 or<br>
 dotnet add package TheSkyLite.SkyNet<br>
-<br>
+</code>
+</pre>
 <b> ⭐ 3.</b>If it needed, Install other packages<br>
 <b> ⭐ 4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
