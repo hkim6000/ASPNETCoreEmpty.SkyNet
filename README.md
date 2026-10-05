@@ -56,8 +56,6 @@ dotnet add package TheSkyLite.SkyNet<br>
 <b>4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 
-//////////////////////////////////////////////////////////<br><br>
-
 <b> ⭐ 5. program.cs for Asp.Net Core</b><br>
 <br>
 ------------------------------------------------------------------------------<br>
