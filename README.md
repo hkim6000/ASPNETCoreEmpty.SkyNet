@@ -70,7 +70,8 @@ var builder = WebApplication.CreateBuilder(args);<br>
 </b>
 
 //////////////////////////////////////////////////////////<br>
-<b>builder.Services.AddHttpContextAccessor();  // 1. Add HttpContext Service</b><br>
+<b>builder.Services.AddHttpContextAccessor();<br>
+// 1. Add HttpContext Service</b><br>
 //////////////////////////////////////////////////////////<br>
 
 <b>var app = builder.Build();</b><br>
@@ -80,9 +81,64 @@ var builder = WebApplication.CreateBuilder(args);<br>
 <b>app.UseStaticHttpCurrent();     // 3. use static http class service</b><br> 
 //////////////////////////////////////////////////////////<br>
 <br>
-<b>app.Run();</b>b><br>
+<b>app.Run();</b><br>
 ------------------------------------------------------------------------------<br>
 <br>
+<b> ⭐ 6. Edit Project File (yourproject.proj)</b><br>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TheSkyLite.SkyNet" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appConfig\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="htmls\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="images\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="logs\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="scripts\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="styles\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="photos\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="temp\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+    <Content Include="data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+</Project>
+
+
+//////////////////////////////////////////////////////////<br><br>
 
 <h3>AI Vibe-Coding Showcases </h3>
 1. ServiceNet - AI powered (Claude Opus 4.8) <br>
