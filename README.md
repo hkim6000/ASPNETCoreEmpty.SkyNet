@@ -41,7 +41,6 @@ Project Root/<br>
  ----------------------------------------------------------------------------------------<br>
 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
-//////////////////////////////////////////////////////////<br>
 <b>1.</b> In Visual Studio, create a empty Asp.Net.core project<br>
 <b>2.</b> Install SkyNet Reference <br>
 In NuGet Package Console <br>
@@ -50,7 +49,6 @@ Install-Package TheSkyLite.SkyNet<br>
 or<br>
 dotnet add package TheSkyLite.SkyNet<br>
 <br>
-//////////////////////////////////////////////////////////<br>
 <b>3.</b>If it needed, Install other packages<br>
       dotnet add package Microsoft.Data.SqlClient: for MS-Sql server<br>
       dotnet add package System.Drawing.Common<br>
@@ -68,76 +66,60 @@ using SkyNet;<br>
 var builder = WebApplication.CreateBuilder(args);<br>
 <br>
 </b>
-
-//////////////////////////////////////////////////////////<br>
-<b>builder.Services.AddHttpContextAccessor();<br>
-// 1. Add HttpContext Service</b><br>
-//////////////////////////////////////////////////////////<br>
-
+<b>builder.Services.AddHttpContextAccessor(); // 1. Add HttpContext Service</b><br>
 <b>var app = builder.Build();</b><br>
-
-//////////////////////////////////////////////////////////<br>
 <b>app.UseMiddleware<IHandler>();  // 2. use SKYNET.IHANDLER as middleware service</b><br>
 <b>app.UseStaticHttpCurrent();     // 3. use static http class service</b><br> 
-//////////////////////////////////////////////////////////<br>
-<br>
 <b>app.Run();</b><br>
 ------------------------------------------------------------------------------<br>
 <br>
+<br>
 <b> ⭐ 6. Edit Project File (yourproject.proj)</b><br>
-<Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="TheSkyLite.SkyNet" Version="1.0.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="appConfig\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="htmls\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="images\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="logs\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="scripts\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="styles\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="photos\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="temp\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-    <Content Include="data\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-</Project>
-
-
+------------------------------------------------------------------------------<br>
+<Project Sdk="Microsoft.NET.Sdk.Web"><br>
+  <PropertyGroup><br>
+    <TargetFramework>net10.0</TargetFramework><br>
+    <Nullable>enable</Nullable><br>
+    <ImplicitUsings>enable</ImplicitUsings><br>
+  </PropertyGroup><br>
+  <ItemGroup><br>
+    <PackageReference Include="TheSkyLite.SkyNet" Version="1.0.5" /><br>
+  </ItemGroup><br>
+  <ItemGroup><br>
+    <Content Include="appConfig\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="htmls\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="images\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="logs\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="scripts\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="styles\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="temp\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+    <Content Include="data\**"><br>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory><br>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory><br>
+    </Content><br>
+  </ItemGroup><br>
+</Project><br>
 //////////////////////////////////////////////////////////<br><br>
 
 <h3>AI Vibe-Coding Showcases </h3>
