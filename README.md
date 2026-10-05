@@ -41,19 +41,19 @@ Project Root/<br>
  ----------------------------------------------------------------------------------------<br>
 
 <h3>Getting Started for Your Own Asp.Net Core Project</h3><br>
-<b>1.</b> In Visual Studio, create a empty Asp.Net.core project<br>
-<b>2.</b> Install SkyNet Reference <br>
+<b> ⭐ 1.</b> In Visual Studio, create a empty Asp.Net.core project<br>
+<b> ⭐ 2.</b> Install SkyNet Reference <br>
 In NuGet Package Console <br>
 ```<br>
 Install-Package TheSkyLite.SkyNet<br>
 or<br>
 dotnet add package TheSkyLite.SkyNet<br>
 <br>
-<b>3.</b>If it needed, Install other packages<br>
+<b> ⭐ 3.</b>If it needed, Install other packages<br>
       dotnet add package Microsoft.Data.SqlClient: for MS-Sql server<br>
       dotnet add package System.Drawing.Common<br>
 <br>
-<b>4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
+<b> ⭐ 4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 
 <b> ⭐ 5. program.cs for Asp.Net Core</b><br>
@@ -61,13 +61,11 @@ dotnet add package TheSkyLite.SkyNet<br>
 <code>
 using SkyNet;<br>
 <br>
-var builder = WebApplication.CreateBuilder(args);<br>
-<br>
-</b>
-<b>builder.Services.AddHttpContextAccessor(); // 1. Add HttpContext Service</b><br>
-<b>var app = builder.Build();</b><br>
-<b>app.UseMiddleware&lt;IHandler&gt();  // 2. use SKYNET.IHANDLER as middleware service</b><br>
-<b>app.UseStaticHttpCurrent();     // 3. use static http class service</b><br> 
+<b>var builder = WebApplication.CreateBuilder(args);</b><br>
+<b>builder.Services.AddHttpContextAccessor();</b> // 1. Add HttpContext Service</b>
+<b>var app = builder.Build();</b>
+<b>app.UseMiddleware&lt;IHandler&gt();</b>  // 2. use SKYNET.IHANDLER as middleware service</b><br>
+<b>app.UseStaticHttpCurrent();</b>     // 3. use static http class service</b><br> 
 <b>app.Run();</b><br>
 </code>
 </pre>
