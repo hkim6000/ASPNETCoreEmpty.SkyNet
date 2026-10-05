@@ -10,7 +10,7 @@ GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br>
 YouTube: https://www.youtube.com/@hckim3948<br>
 Developer Guide: https://www.theskylite.com/documents/SkyNet_Developer_Guide.html<br><br>
 
-<h3>Project Structure</h3><br>
+<h3>Project Structure</h3>
 <pre>
 <code>
 Project Root/<br>
@@ -53,9 +53,37 @@ dotnet add package TheSkyLite.SkyNet<br>
 </code>
 </pre>
 <b> ⭐ 3.</b>If it needed, Install other packages<br>
-<b> ⭐ 4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
+<b> ⭐ 4.</b> Add option to Properties/<b>launchsetting.json</b>b file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
-
+<pre>
+<code>
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "http": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5154",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "hotReloadEnabled": false
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7027;http://localhost:5154",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "hotReloadEnabled": false
+    }
+  }
+}
+</code>
+</pre>
 <b> ⭐ 5. program.cs for Asp.Net Core</b><br>
 <pre>
 <code>
