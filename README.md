@@ -5,6 +5,7 @@
 - SKYNET framework (C# only)<br>
 Platform: ASP.NET Core / .NET 10<br>
 Architecture: Middleware-based <br>
+- Optimized for AI (Claude)<br>
 
 GitHub: https://github.com/hkim6000/ASPNETCoreEmpty.SkyNet<br>
 YouTube: https://www.youtube.com/@hckim3948<br>
