@@ -149,7 +149,12 @@ using SkyNet;<br>
 </code>
 </pre>
 ------------------------------------------------------------------------------<br>
- 
+
+<h3>AI Vibe-Coding Prerequisite for SkyNet</h3>
+ Before AI writes codes, Let AI read these articles<br>
+- <b>https://www.theskylite.com/documents/SkyNet_Developer_Guide.html</b><br>
+- <b>SKILL.SkyNet.md</b> in file list above<br>
+<br>
 <h3>AI Vibe-Coding Showcases </h3>
 1. ServiceNet - AI powered (Claude Opus 4.8) <br>
 Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
