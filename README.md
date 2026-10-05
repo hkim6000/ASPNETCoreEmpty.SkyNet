@@ -120,9 +120,7 @@ using SkyNet;<br>
 </code>
 </pre>
 ------------------------------------------------------------------------------<br>
-
-//////////////////////////////////////////////////////////<br><br>
-
+ 
 <h3>AI Vibe-Coding Showcases </h3>
 1. ServiceNet - AI powered (Claude Opus 4.8) <br>
 Demo.Website Link: https://www.theskylite.com/ServiceNet <br>
