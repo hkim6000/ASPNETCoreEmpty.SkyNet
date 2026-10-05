@@ -50,9 +50,6 @@ or<br>
 dotnet add package TheSkyLite.SkyNet<br>
 <br>
 <b> ⭐ 3.</b>If it needed, Install other packages<br>
-      dotnet add package Microsoft.Data.SqlClient: for MS-Sql server<br>
-      dotnet add package System.Drawing.Common<br>
-<br>
 <b> ⭐ 4.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 
